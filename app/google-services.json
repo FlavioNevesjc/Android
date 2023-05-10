@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91540196441",
+    "project_id": "aplicativo-de-teste-ced6d",
+    "storage_bucket": "aplicativo-de-teste-ced6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91540196441:android:8a2e6da780e3f8f5243548",
+        "android_client_info": {
+          "package_name": "com.example.aplicativodeteste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91540196441-hhulesf6tn01tn9mbructp4c1psa0lvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaeqtwz8iAAbU0xgC65n1XnBVre0awNHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91540196441-hhulesf6tn01tn9mbructp4c1psa0lvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
