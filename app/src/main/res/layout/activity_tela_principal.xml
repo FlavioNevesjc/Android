@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".view.telaprincipal.TelaPrincipal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_deslogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_deslogar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/bt_atualizarDadosDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_atualizar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"/>
+
+
+    <Button
+        android:id="@+id/bt_deletarDadosDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_deletar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/bt_gravarDadosDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_gravar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/bt_lerDadosDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_ler"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/txt_resultadoN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_resultadoS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_resultadoI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

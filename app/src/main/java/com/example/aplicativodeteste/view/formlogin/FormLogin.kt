@@ -12,7 +12,6 @@ import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
-import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
 class FormLogin : AppCompatActivity() {
@@ -47,18 +46,12 @@ class FormLogin : AppCompatActivity() {
                         is FirebaseNetworkException                -> "Sem conexão com a internet!"
                         else                                       -> "Erro ao fazer login do usuario"
                     }
-                    val snackbar = Snackbar.make(view,mensagemErro,Snackbar.LENGTH_SHORT )
+                    val snackbar = Snackbar.make(view,mensagemErro,Snackbar.LENGTH_SHORT)
                         snackbar.setBackgroundTint(Color.RED)
                         snackbar.show()
-
-                    // Parei em 1:26:30 no video!!!!!
-
-
                 }
             }
-
         }
-
 
         binding.txtTelaCadastro.setOnClickListener{
             val intent = Intent(this,FormCadastro::class.java)
@@ -72,4 +65,12 @@ class FormLogin : AppCompatActivity() {
         finish()
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+        if (usuarioAtual != null) {
+            navegarTelaPrincipal()
+        }
+    }
 }
